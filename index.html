@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SkyRoute — AI Travel Planner | Discover Your Next Adventure</title>
+  <meta name="description" content="SkyRoute AI Travel Planner helps you discover 60+ stunning destinations worldwide." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a class="logo" href="#" onclick="navigateTo('home')">
+        <span class="logo-main"><span class="logo-icon">✈</span> Sky<span class="logo-route">Route</span></span>
+        <span class="logo-sub">AI TRAVEL PLANNER</span>
+      </a>
+      <div class="nav-links" id="navLinks">
+        <a href="#hero" class="nav-active" onclick="closeMenu()">Home</a>
+        <a href="#features" onclick="closeMenu()">Features</a>
+        <a href="#destinations" onclick="closeMenu()">Destinations</a>
+        <a href="#inspiration" onclick="closeMenu()">Inspiration</a>
+        <a href="#planner" onclick="closeMenu()">Planner</a>
+        <a href="#tips" onclick="closeMenu()">Tips</a>
+        <a href="#about" onclick="closeMenu()">About</a>
+        <a href="#contact" onclick="closeMenu()">Contact</a>
+      </div>
+      <a class="nav-cta" href="#planner">Plan My Trip ✈</a>
+      <button class="menu-btn" onclick="toggleMenu()">☰</button>
+    </div>
+  </nav>
+  <div id="app"></div>
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+  <script type="text/javascript">
+    (function(d, t) {
+        var v = d.createElement(t), s = d.getElementsByTagName(t)[0];
+        v.onload = function() {
+          window.voiceflow.chat.load({
+            verify: { projectID: '69f391e5f7c2cf2d7c679107' },
+            url: 'https://general-runtime.voiceflow.com',
+            versionID: 'production'
+          });
+        }
+        v.src = "https://cdn.voiceflow.com/widget/bundle.mjs"; v.type = "text/javascript"; s.parentNode.insertBefore(v, s);
+    })(document, 'script');
+  </script>
+</body>
+</html>
