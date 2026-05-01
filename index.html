@@ -41,7 +41,12 @@
           window.voiceflow.chat.load({
             verify: { projectID: '69f391e5f7c2cf2d7c679107' },
             url: 'https://general-runtime.voiceflow.com',
-            versionID: 'production'
+            versionID: 'production',
+            assistant: {
+              title: "SkyRouter AI",
+              description: "Travel Planner Chatbot",
+              image: "./images/bot-logo.png"
+            }
           });
         }
         v.src = "https://cdn.voiceflow.com/widget/bundle.mjs"; v.type = "text/javascript"; s.parentNode.insertBefore(v, s);
